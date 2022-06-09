@@ -15,6 +15,7 @@ spec:
         - name: api-gateway
           image: zalerix/thesis-api-gateway:latest
           livenessProbe:
+            initialDelaySeconds: 10
             httpGet:
               port: 9000
               path: /actuator/health/liveness
