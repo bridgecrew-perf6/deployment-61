@@ -13,12 +13,13 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: zalerix/thesis-api-gateway:1.2.1
+          image: zalerix/thesis-api-gateway:latest
           livenessProbe:
             httpGet:
               port: 9000
               path: /actuator/health/liveness
           readinessProbe:
+            initialDelaySeconds: 10
             httpGet:
               port: 9000
               path: /actuator/health/readiness
