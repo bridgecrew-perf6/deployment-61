@@ -7,6 +7,6 @@ resources:
   - api-gateway-ingress.yaml
 
 images:
-  - name: zalerix/thesis-api-gateway
+  - name: zalerix/thesis-api-gateway:latest
     newName: zalerix/thesis-api-gateway
     newTag: 1.3.2
