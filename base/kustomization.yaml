@@ -10,4 +10,4 @@ resources:
 images:
 - name: zalerix/thesis-api-gateway:latest
   newName: zalerix/thesis-api-gateway
-  newTag: 1.5.0
+  newTag: 1.5.1
