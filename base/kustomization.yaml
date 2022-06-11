@@ -5,6 +5,7 @@ resources:
 - api-gateway-deployment.yaml
 - api-gateway-ip.yaml
 - api-gateway-ingress.yaml
+- api-gateway-hpa.yaml
 
 images:
 - name: zalerix/thesis-api-gateway:latest
