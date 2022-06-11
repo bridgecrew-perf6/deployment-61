@@ -35,9 +35,6 @@ spec:
             requests:
               cpu: "100m"
               memory: "256Mi"
-          env:
-            - name: JAVA_OPTS
-              value: "-XX:InitialRAMPercentage=40.0 -XX:MaxRAMPercentage=75.0"
           ports:
             - containerPort: 8080
               name: app-port
