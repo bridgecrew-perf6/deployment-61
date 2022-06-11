@@ -10,6 +10,7 @@ spec:
     metadata:
       labels:
         name: api-gateway
+        prometheus: monitoring
     spec:
       containers:
         - name: api-gateway
