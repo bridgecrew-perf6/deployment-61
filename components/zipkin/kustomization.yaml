@@ -3,3 +3,4 @@ kind: Component
 resources:
   - cluster-ip.yml
   - deployment.yaml
+  - ingress.yaml
