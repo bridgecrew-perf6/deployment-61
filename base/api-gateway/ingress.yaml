@@ -3,19 +3,19 @@ kind: Ingress
 metadata:
   name: ingress-to-gateway
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   rules:
     - http:
         paths:
-          - path: /metrics
+          - path: /metrics(/|$)(.*)
             pathType: Prefix
             backend:
               service:
                 name: grafana-url
                 port:
                   number: 3000
-          - path: /api
+          - path: /api(/|$)(.*)
             pathType: Prefix
             backend:
               service:
