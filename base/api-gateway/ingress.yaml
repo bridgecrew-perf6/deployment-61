@@ -19,7 +19,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: api-gateway-port
+                name: api-gateway-url
                 port:
                   number: 8080
   ingressClassName: nginx
