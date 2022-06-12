@@ -2,12 +2,18 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- api-gateway-deployment.yaml
-- api-gateway-ip.yaml
-- api-gateway-ingress.yaml
-- api-gateway-hpa.yaml
+- api-gateway/deployment.yaml
+- api-gateway/cluster-ip.yaml
+- api-gateway/ingress.yaml
+- api-gateway/hpa.yaml
+- user-service/deployment.yaml
+- user-service/cluster-ip.yaml.yaml
+- user-service/hpa.yaml.yaml
 
 images:
 - name: zalerix/thesis-api-gateway:latest
   newName: zalerix/thesis-api-gateway
   newTag: 1.6.0
+- name: zalerix/thesis-user-service:latest
+  newName: zalerix/thesis-user-service
+  newTag: 1.0.0
