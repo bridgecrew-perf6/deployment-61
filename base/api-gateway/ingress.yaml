@@ -15,6 +15,13 @@ spec:
                 name: grafana-url
                 port:
                   number: 3000
+          - path: /zipkin(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: zipkin-url
+                port:
+                  number: 9411
           - path: /api(/|$)(.*)
             pathType: Prefix
             backend:
