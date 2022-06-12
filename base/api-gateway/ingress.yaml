@@ -9,10 +9,10 @@ spec:
     - http:
         paths:
           - path: /metrics
-            pathType: prefix
+            pathType: Prefix
             backend:
               service:
-                name: grafana
+                name: grafana-url
                 port:
                   number: 3000
           - path: /
