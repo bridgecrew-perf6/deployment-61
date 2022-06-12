@@ -7,8 +7,8 @@ resources:
 - api-gateway/ingress.yaml
 - api-gateway/hpa.yaml
 - user-service/deployment.yaml
-- user-service/cluster-ip.yaml.yaml
-- user-service/hpa.yaml.yaml
+- user-service/cluster-ip.yaml
+- user-service/hpa.yaml
 
 images:
 - name: zalerix/thesis-api-gateway:latest
