@@ -13,7 +13,7 @@ resources:
 images:
 - name: zalerix/thesis-api-gateway:latest
   newName: zalerix/thesis-api-gateway
-  newTag: 1.7.1
+  newTag: 1.8.0
 - name: zalerix/thesis-user-service:latest
   newName: zalerix/thesis-user-service
   newTag: 1.2.1
