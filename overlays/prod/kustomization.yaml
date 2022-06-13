@@ -8,3 +8,13 @@ resources:
 
 components:
   - ../../components/zipkin
+
+configMapGenerator:
+  - name: user_service-properties
+    envs:
+      - user-service/config.properties
+
+secretGenerator:
+  - name: common-sercrets
+    envs:
+      - secrets.properties
