@@ -12,6 +12,7 @@ resources:
 - knowhere-frontend/deployment.yaml
 - knowhere-frontend/cluster-ip.yaml
 - knowhere-frontend/hpa.yaml
+- knowhere-frontend/ingress.yaml
 
 images:
 - name: zalerix/thesis-api-gateway:latest
