@@ -9,6 +9,9 @@ resources:
 - user-service/deployment.yaml
 - user-service/cluster-ip.yaml
 - user-service/hpa.yaml
+- knowhere-frontend/deployment.yaml
+- knowhere-frontend/cluster-ip.yaml
+- knowhere-frontend/hpa.yaml
 
 images:
 - name: zalerix/thesis-api-gateway:latest
@@ -17,3 +20,6 @@ images:
 - name: zalerix/thesis-user-service:latest
   newName: zalerix/thesis-user-service
   newTag: 1.3.0
+- name: zalerix/knowhere-frontend:latest
+  newName: zalerix/knowhere-frontend
+  newTag: 0.0.0
