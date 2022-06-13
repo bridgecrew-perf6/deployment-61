@@ -10,7 +10,7 @@ components:
   - ../../components/zipkin
 
 configMapGenerator:
-  - name: user_service-properties
+  - name: user_service-env
     envs:
       - user-service/config.properties
 

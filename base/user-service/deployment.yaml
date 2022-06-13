@@ -41,6 +41,6 @@ spec:
               name: actuator-port
           envFrom:
             - configMapRef:
-                name: user_service-properties
+                name: user_service-env
             - secretRef:
                 name: common-secrets
